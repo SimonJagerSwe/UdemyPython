@@ -26,3 +26,9 @@ archer1 = Archer('Robin', 30)
 
 def player_attack(char):
     char.attack()
+
+player_attack(wizard1)
+player_attack(archer1)
+
+for char in [wizard1, archer1]:
+    char.attack()
