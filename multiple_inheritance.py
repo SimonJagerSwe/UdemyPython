@@ -35,6 +35,7 @@ class HybridBorg(Wizard, Archer):
         Archer.__init__(self, name, num_arrows)
 
 HyBo1 = HybridBorg('Borgie', 50, 100)
+print(HyBo1.name)
 print(HyBo1.run())
 print(HyBo1.check_arrows())
 print(HyBo1.sign_in())
