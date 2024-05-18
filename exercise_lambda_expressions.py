@@ -10,4 +10,7 @@ print(list(map(lambda num : num ** 2, my_list)))
 print(list(map(lambda item : item * item, my_list)))
 
 # 2: List sorting
-a = [(0, 2), (3, 4), (9.9), (10, -1)]
+a = [(0, 2), (3, 4), (10, -1), (9.9)]
+
+a.sort(key = lambda x : x[1])
+print(a)
