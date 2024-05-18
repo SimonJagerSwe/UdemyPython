@@ -35,6 +35,6 @@ simple_dict = {
     'B' : 2
 }
 
-my_dict = {key : value ** 2 for key, value in simple_dict.items()}
+my_dict = {key : value ** 2 for key, value in simple_dict.items() if value % 2 == 0}
 
 print(my_dict)
