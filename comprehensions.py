@@ -25,6 +25,16 @@ print(my_list4)
 
 
 ##### SET COMPREHENSIONS #####
+my_set = {char for char in 'Hello'}
+print(my_set)
 
 
 ##### DICTIONARY COMPREHENSIONS #####
+simple_dict = {
+    'A' : 1, 
+    'B' : 2
+}
+
+my_dict = {key : value ** 2 for key, value in simple_dict.items()}
+
+print(my_dict)
