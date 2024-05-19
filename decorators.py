@@ -48,6 +48,7 @@ a()
 
 
 # More complex decorator
+'''
 def my_decorator(func):
     def wrap_func(*args, **kwargs):
         func(*args, **kwargs)
@@ -59,3 +60,22 @@ def hello(greeting, emoji = ':('):
 
 hello('Hiiiiiii!')
 hello('Hiiiiiii!', ':)')
+'''
+
+# Performance decorator
+from time import time
+def performance(func):
+    def wrapper(*args, **kwargs):
+        time1 = time()
+        result = func(*args, **kwargs)
+        time2 = time()
+        print(f'It took {time2 - time1} ms')
+        return result
+    return wrapper
+
+@performance
+def long_time():
+    for i in range(100000000):
+        i*5
+
+long_time()
