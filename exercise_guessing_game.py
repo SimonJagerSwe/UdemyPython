@@ -1,7 +1,9 @@
 ########## EXERCISE: GUESSING GAME ##########
 from random import randint
 
+##### MY SOLUTION #####
 # GENERATE A NUMBER FROM 1 TO 10
+'''
 answer = randint(1, 10)
 print(answer)
 
@@ -18,4 +20,19 @@ while guess != answer:
 
 if guess == answer:
     print('Great guess!')
+'''
+
+##### UDEMY SOLUTION #####
+answer = randint(1, 10)
+
+guess = input('Guess a number 1~10: ')
+
+while True:
+    try:
+        if int(guess) > 0 and int(guess) < 11:
+            print('All good')
+            break
+    except ValueError:
+        print('Please enter a number: ')
+        continue
 
