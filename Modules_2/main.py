@@ -10,3 +10,11 @@ print(multiply(5, 2))
 print(max([1, 2, 3]))
 
 ##### __name__ #####
+if __name__ == '__main__':
+    print('Please run this')
+
+class Student():
+    pass
+
+st1 = Student()
+print(type(st1))
