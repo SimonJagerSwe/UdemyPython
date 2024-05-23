@@ -1,4 +1,6 @@
 ########## SHOPPING CART ##########
+print(__name__)
+
 
 def buy(item):
     cart = []
