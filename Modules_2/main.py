@@ -1,6 +1,7 @@
 ########## MAIN ##########
 from Shopping.utility import multiply, divide
 from Shopping.More_shopping.shopping_cart import buy
+# from X import *       IMPORTS EVERYTHING
 
 print(buy('Apple'))
 print(divide(5, 2))
