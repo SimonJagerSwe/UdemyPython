@@ -1,5 +1,5 @@
 ########## MAIN ##########
 import Shopping.utility
-import Shopping.shopping_cart
+import Modules_2.Shopping.More_shopping.shopping_cart
 
-print(Shopping.shopping_cart.buy('Apple'))
+print(Modules_2.Shopping.More_shopping.shopping_cart.buy('Apple'))
