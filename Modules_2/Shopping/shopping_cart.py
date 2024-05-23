@@ -1,6 +1,6 @@
 ########## SHOPPING CART ##########
 
-def shopping_cart(item):
+def buy(item):
     cart = []
     cart.append(item)
     return cart
