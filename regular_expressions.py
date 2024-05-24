@@ -15,3 +15,13 @@ print(a.span())
 print(a.start())
 print(a.end())
 print(a.group())
+
+
+# Search pattern
+pattern = re.compile('inside')
+b = pattern.search(string)
+print(b.group())
+c = pattern.findall(string)
+print(c)
+d = pattern.fullmatch(string)
+print(d)
