@@ -12,6 +12,17 @@ class TestMain(unittest.TestCase):
     def test_do_stuff2(self):
             test_param = 'asdadwea'
             result = test_main.do_stuff(test_param)
-            self.assertTrue(isinstance(result, ValueError))
+            self.assertIsInstance(result, ValueError)
 
-unittest.main()
+    def test_do_stuff3(self):
+         test_param = None
+         result = test_main.do_stuff(test_param)
+         self.assertEqual(result, 'Please enter number')
+
+    def test_do_stuff4(self):
+         test_param = ''
+         result = test_main.do_stuff(test_param)
+         self.assertEqual(result, 'Please enter number')
+        
+if __name__ == '__main__':
+    unittest.main()
