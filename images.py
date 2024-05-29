@@ -1,6 +1,7 @@
 ########## IMAGES ##########
 from PIL import Image, ImageFilter
 
+'''
 # Some methods
 img = Image.open('./images/pikachu.jpg')
 print(img)
@@ -28,3 +29,10 @@ filtered_image.show()
 crooked_img = grey_img.rotate(90)
 crooked_img.save('crooked.png', 'png')
 crooked_img.show()
+
+'''
+# Making a thumbnail
+img = Image.open('./images/astro.jpg')
+print(img.size)
+new_img = img.resize((400, 400))
+new_img.save('thumbnail.jpg')
