@@ -18,3 +18,13 @@ filtered_image.save('blur.png', 'png')
 # Converting
 grey_img = img.convert('L')
 grey_img.save('grey.png', 'png')
+
+
+# Showing
+filtered_image.show()
+
+
+# Rotating
+crooked_img = grey_img.rotate(90)
+crooked_img.save('crooked.png', 'png')
+crooked_img.show()
