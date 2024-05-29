@@ -31,6 +31,7 @@ crooked_img.save('crooked.png', 'png')
 crooked_img.show()
 
 '''
+
 # Making a thumbnail
 img = Image.open('./images/astro.jpg')
 print(img.size)
