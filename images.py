@@ -10,6 +10,6 @@ print(img.mode)
 print(dir(img))
 
 
-# Using filter
+# Using BLUR filter
 filtered_image = img.filter(ImageFilter.BLUR)
 filtered_image.save('blur.png', 'png')
