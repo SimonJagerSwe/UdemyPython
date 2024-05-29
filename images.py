@@ -7,9 +7,14 @@ print(img)
 print(img.format)
 print(img.size)
 print(img.mode)
-print(dir(img))
+# print(dir(img))
 
 
 # Using BLUR filter
 filtered_image = img.filter(ImageFilter.BLUR)
 filtered_image.save('blur.png', 'png')
+
+
+# Converting
+grey_img = img.convert('L')
+grey_img.save('grey.png', 'png')
