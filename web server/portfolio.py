@@ -1,10 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route('/')
 def my_home():
     return render_template('index.html')
 
+# NOT DRY CODE
+'''
 @app.route('/index.html')
 def index():
     return render_template('index.html')
@@ -20,3 +22,13 @@ def about():
 @app.route('/contact.html')
 def contact():
     return render_template('contact.html')
+'''
+
+@app.route(('/<string:page_name>'))
+def html_page(page_name):
+    return render_template(page_name)
+
+
+@app.route('/submit_form', methods=['POST', 'GET'])
+def submit_form():
+    return 'Form submitted! Nice!' 
