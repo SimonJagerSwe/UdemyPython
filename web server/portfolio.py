@@ -19,4 +19,4 @@ def about():
 
 @app.route('/contact.html')
 def contact():
-    return render_template('works.html')
+    return render_template('contact.html')
