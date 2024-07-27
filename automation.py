@@ -1,11 +1,12 @@
 ########## TEST AUTOMATION ##########
 from selenium import webdriver
 
+'''
 chrome_browser = webdriver.Chrome()
 
 chrome_browser.maximize_window()
 
-'''
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -32,3 +33,7 @@ show_message_button.click()
 output_message = chrome_browser.find_element(By.ID, 'display')
 assert 'I AM EXTRA COOOOL' in output_message.text
 '''
+
+browser = webdriver.Chrome()
+
+browser.get('https://www.seleniumeasy.com/')
